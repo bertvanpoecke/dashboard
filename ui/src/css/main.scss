@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed:light");
+@import url("./all.min.css");
+
+$font-stack: 'Open Sans', Helvetica, sans-serif;
+$font-stack-name: 'Roboto Condensed', Helvetica, sans-serif;
+$font-style-name: 'Light';
+
+$background-color: #ffffff;
+$content-background: linear-gradient( to top, black, #545454 );
+$primary-color: #000000;
+$link-color: $primary-color;
+$link-color-hover: #287efe;
+
+$traffic-main-color: green;
+$traffic-main-fontsize: 1em;
+$traffic-road-color: #ffffff;
+$traffic-road-fontsize: 1.5em;
+$traffic-direction-fontsize: 1.2em;
+$traffic-location-color: grey;
+$traffic-location-fontsize: 1em;
+
+$button-size: 40px;
+$button-border-width: 2px;
+
+$break-small: 520px;
+$break-large: 1200px;
+$height-small: 700px;
+$height-small-top: 300px;
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: $background-color;
+
+	font: 100% $font-stack;
+	color: $primary-color;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: $link-color;
+
+	&:hover {
+		color: $link-color-hover;
+	}
+}
+
+header {
+	h1 {
+		font-family: $font-stack-name;
+		font-style: $font-style-name;
+		font-size: 4em;
+		margin-top: 0;
+	}
+
+	p {
+		margin-top: 50px;
+		font-size: .9em;
+	}
+
+	a {
+		border-bottom: 1px dotted;
+
+		&:hover {
+			border-bottom: none;
+		}
+	}
+}
+
+// .tile
+// {
+// 	width: 20%;
+// }
+
+
+.tile {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+}
+
+.road {
+	background-color: $traffic-main-color;
+	border-radius: 10px;
+	color: $traffic-road-color;
+	font-size: $traffic-road-fontsize;
+	padding: 14px 28px;
+	margin: 5px 5px;
+}
+.direction {
+	border: 2px solid $traffic-main-color;
+	border-radius: 10px;
+	color: $traffic-main-color;
+	font-size: $traffic-direction-fontsize;
+	padding: 14px 28px;
+	margin: 5px 5px;
+}
+.location {
+	color: $traffic-location-color;
+	font-size: $traffic-location-fontsize;
+	padding: 14px 28px;
+	margin: 5px 5px;
+}
+
+
+  .card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+  }
