@@ -48,9 +48,9 @@ func InitNewAPI() (*API, error) {
 
 	api.router = router
 
-	// start traffic getter
-	traffic := NewTrafficInfoGetter()
-	traffic.Start()
+	// // start traffic getter
+	// traffic := NewTrafficInfoGetter()
+	// traffic.Start()
 
 	// create server
 	api.server = &http.Server{}
